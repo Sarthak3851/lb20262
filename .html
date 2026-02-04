@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Lena 🎂</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+  text-align:center;
+  color:#fff;
+}
+.container{
+  padding:30px 15px;
+}
+h1{
+  font-size:2.5rem;
+}
+.card{
+  background:rgba(255,255,255,0.15);
+  border-radius:20px;
+  padding:20px;
+  margin:20px auto;
+  max-width:400px;
+  backdrop-filter: blur(6px);
+}
+.photos img{
+  width:100%;
+  border-radius:15px;
+  margin:10px 0;
+}
+.message{
+  font-size:1rem;
+  line-height:1.6;
+}
+.footer{
+  margin-top:20px;
+  font-size:0.9rem;
+  opacity:0.9;
+}
+button{
+  background:#fff;
+  color:#ff5f7e;
+  border:none;
+  padding:12px 20px;
+  border-radius:25px;
+  font-size:1rem;
+  cursor:pointer;
+}
+.hidden{
+  display:none;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>🎉 Happy Birthday 🎉</h1>
+  <h2>Lena (Bellu) 💖</h2>
+
+  <button onclick="reveal()">Tap for Surprise 👀</button>
+
+  <div id="content" class="hidden">
+    <div class="card photos">
+      <img src="photo1.jpg">
+      <img src="photo2.jpg">
+      <img src="photo3.jpg">
+    </div>
+
+    <div class="card message">
+      Happy Birthday Lena (Bellu) 🎂💖<br><br>
+      Aaj ka din thoda special hai… kyunki aaj tu paida hui thi 😌<br>
+      Tera smile automatically mood better kar deta hai,<br>
+      aur tera pagalpan is low-key addictive 😄<br><br>
+      Door hoke bhi dil ke kaafi paas hai tu.<br>
+      Aaj main saamne nahi hoon,<br>
+      par ye chhota sa surprise sirf tere liye.<br><br>
+      Hasti reh, chamakti reh ✨<br>
+      Aur haan… cake mere naam ka bhi kaat lena 👀🎂
+    </div>
+  </div>
+
+  <div class="footer">Made with 💖 just for you</div>
+</div>
+
+<script>
+function reveal(){
+  document.getElementById("content").style.display="block";
+}
+</script>
+
+</body>
+</html>
